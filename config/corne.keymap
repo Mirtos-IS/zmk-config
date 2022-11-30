@@ -8,8 +8,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    chosen { zmk,matrix-transform = &five_column_transform; };
     keymap {
-        chosen { zmk,matrix-transform = &five_column_transform; };
         compatible = "zmk,keymap";
 
 
