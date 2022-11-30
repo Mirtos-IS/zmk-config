@@ -9,8 +9,9 @@
 
 / {
     keymap {
-        compatible = "zmk,keymap";
         chosen { zmk,matrix-transform = &five_column_transform; };
+        compatible = "zmk,keymap";
+
 
         Alpha {
             // -----------------------------------------------------------------------------------------
