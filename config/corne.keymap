@@ -8,51 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        Caps {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <7 8 9>;
-        };
-
-        Tab {
-            bindings = <&kp TAB>;
-            key-positions = <2 1>;
-        };
-
-        Ctrl_Backspace {
-            bindings = <&ctrl_backspace>;
-            key-positions = <8 9>;
-        };
-
-        Shift_enter {
-            bindings = <&Shift_enter>;
-            key-positions = <7 8>;
-        };
-    };
-
-    macros {
-        ctrl_backspace: ctrl_backspace {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RIGHT_CONTROL>,
-                <&macro_tap>,
-                <&kp BACKSPACE>,
-                <&macro_release>,
-                <&kp RIGHT_CONTROL>;
-        };
-        Shift_enter: Shift_enter {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings = <&sk LEFT_SHIFT &kp ENTER>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
