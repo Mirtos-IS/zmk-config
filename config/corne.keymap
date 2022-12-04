@@ -31,9 +31,7 @@
             key-positions = <7 8>;
         };
     };
-    &mt {
-        flavor = "balanced"
-    };
+
 
     macros {
         ctrl_backspace: ctrl_backspace {
@@ -55,7 +53,11 @@
             bindings = <&sk LEFT_SHIFT &kp ENTER>;
         };
     };
-
+    
+    &mt {
+        flavor = "balanced"
+    };
+    
     keymap {
         compatible = "zmk,keymap";
 
