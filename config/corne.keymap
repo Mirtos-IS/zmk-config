@@ -7,6 +7,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+&mt {
+    flavor = "balanced";
+};
+    
 / {
     combos {
         compatible = "zmk,combos";
@@ -54,10 +58,7 @@
         };
     };
     
-    &mt {
-        flavor = "balanced";
-    };
-    
+
     keymap {
         compatible = "zmk,keymap";
 
