@@ -79,9 +79,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &none  &kp UNDERSCORE  &kp QUESTION   &kp HASH         &kp MINUS        &kp PIPE          &kp GRAVE   &kp PLUS     &kp U   &kp A   &kp O   &none
+  &none  &kp UNDERSCORE  &kp QUESTION   &kp HASH         &kp MINUS   &kp BACKSLASH          &kp GRAVE   &kp PLUS     &kp U   &kp A   &kp O   &none
   &none           &kp I        &kp AT  &kp EQUAL        &kp DOLLAR     &kp PERCENT           &kp AMPS   &kp STAR     &kp E   &kp A   &kp O   &none
-  &none   &kp BACKSLASH     &kp TILDE      &kp C  &kp GREATER_THAN        &kp EXCL              &kp A  &kp CARET     &kp E   &kp A   &kp O   &none
+  &none        &kp PIPE     &kp TILDE      &kp C  &kp GREATER_THAN        &kp EXCL              &kp A  &kp CARET     &kp E   &kp A   &kp O   &none
                                         &kp LGUI            &trans  &sk LEFT_SHIFT            &kp DEL  &kp SLASH  &kp RALT
             >;
         };
