@@ -31,6 +31,9 @@
             key-positions = <7 8>;
         };
     };
+    &mt {
+        flavor = "tap-preferred"
+    };
 
     macros {
         ctrl_backspace: ctrl_backspace {
