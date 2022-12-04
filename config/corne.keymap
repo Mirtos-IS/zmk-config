@@ -32,7 +32,7 @@
         };
     };
     &mt {
-        flavor = "tap-preferred"
+        flavor = "balanced"
     };
 
     macros {
