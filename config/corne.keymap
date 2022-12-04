@@ -55,7 +55,7 @@
     };
     
     &mt {
-        flavor = "balanced"
+        flavor = "balanced";
     };
     
     keymap {
