@@ -8,79 +8,122 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    chosen { zmk,matrix-transform = &five_column_transform; };
+    combos {
+        compatible = "zmk,combos";
+
+        Caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <7 8 9>;
+        };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <2 1>;
+        };
+
+        Ctrl_Backspace {
+            bindings = <&ctrl_backspace>;
+            key-positions = <8 9>;
+        };
+
+        Shift_enter {
+            bindings = <&Shift_enter>;
+            key-positions = <7 8>;
+        };
+    };
+
+    macros {
+        ctrl_backspace: ctrl_backspace {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_CONTROL>,
+                <&macro_tap>,
+                <&kp BACKSPACE>,
+                <&macro_release>,
+                <&kp RIGHT_CONTROL>;
+        };
+        Shift_enter: Shift_enter {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_SHIFT &kp ENTER>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-
         Alpha {
             // -----------------------------------------------------------------------------------------
-            // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
-            // |   A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | 
-            // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | 
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-           &kp Y        &kp C           &kp L       &kp M      &kp K                  &kp Z        &kp F          &kp U    &kp COMMA  &kp SINGLE_QUOTE   
- &mt LEFT_GUI I  &mt LCTRL S           &kp R  &mt LALT T      &kp G                  &kp P   &mt RALT N          &kp E  &mt RCTRL A   &mt RIGHT_GUI O   
-          &kp Q        &kp V           &kp W       &kp D      &kp J                  &kp B        &kp H  &kp SEMICOLON      &kp DOT             &kp X  
+  &none           &kp Y        &kp C           &kp L       &kp M      &kp K                  &kp Z        &kp F          &kp U    &kp COMMA  &kp SINGLE_QUOTE   &none
+  &none  &mt LEFT_GUI I  &mt LCTRL S           &kp R  &mt LALT T      &kp G                  &kp P   &mt RALT N          &kp E  &mt RCTRL A   &mt RIGHT_GUI O   &none
+  &none           &kp Q        &kp V           &kp W       &kp D      &kp J                  &kp B        &kp H  &kp SEMICOLON      &kp DOT             &kp X   &none
                                       &sk LEFT_SHIFT       &sl 1  &lt 2 ESC          &kp BACKSPACE  &lt 4 SPACE    &lt 3 ENTER
             >;
         };
 
         Symbol {
             // -----------------------------------------------------------------------------------------
-            // |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | 
-            // |  BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     | 
-            // |    |     |     |     |     |   |     |     |     |     |     | 
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &kp UNDERSCORE  &kp QUESTION   &kp HASH         &kp MINUS        &kp PIPE          &kp GRAVE   &kp PLUS     &kp U   &kp A   &kp O   
-           &kp I        &kp AT  &kp EQUAL        &kp DOLLAR     &kp PERCENT           &kp AMPS   &kp STAR     &kp E   &kp A   &kp O  
-  &kp BACKSLASH     &kp TILDE      &kp C  &kp GREATER_THAN        &kp EXCL              &kp A  &kp CARET     &kp E   &kp A   &kp O 
+  &none  &kp UNDERSCORE  &kp QUESTION   &kp HASH         &kp MINUS        &kp PIPE          &kp GRAVE   &kp PLUS     &kp U   &kp A   &kp O   &none
+  &none           &kp I        &kp AT  &kp EQUAL        &kp DOLLAR     &kp PERCENT           &kp AMPS   &kp STAR     &kp E   &kp A   &kp O   &none
+  &none   &kp BACKSLASH     &kp TILDE      &kp C  &kp GREATER_THAN        &kp EXCL              &kp A  &kp CARET     &kp E   &kp A   &kp O   &none
                                         &kp LGUI            &trans  &sk LEFT_SHIFT            &kp DEL  &kp SLASH  &kp RALT
             >;
         };
 
         symnum {
             // -----------------------------------------------------------------------------------------
-            // |   !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-            // |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  | 
-            // |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" | 
+            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-      &kp A       &kp K_REDO         &kp K_COPY            &kp K_PASTE         &kp K_CUT           &kp STAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp MINUS   
-  &kp K_UNDO   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS     &kp LESS_THAN          &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0   
-       &kp O  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN          &kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp PLUS   
+  &none       &kp A       &kp K_REDO         &kp K_COPY            &kp K_PASTE         &kp K_CUT           &kp STAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp MINUS   &none
+  &none  &kp K_UNDO   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS     &kp LESS_THAN          &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0   &none
+  &none       &kp O  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN          &kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp PLUS   &none
                                                  &trans                 &trans            &trans          &kp COMMA       &kp DOT   &kp PERCENT
             >;
         };
 
         System {
             bindings = <
-  &trans  &kp K_MUTE    &kp K_VOL_DN      &kp C_VOL_UP  &kp SCROLLLOCK            &kp K_CUT  &kp F1  &kp F2  &kp F3  &kp F10 
-  &trans  &kp C_PREV      &kp C_NEXT  &kp K_PLAY_PAUSE  &kp KP_NUMLOCK           &kp K_COPY  &kp F4  &kp F5  &kp F6  &kp F11  
-  &trans      &trans    &kp C_BRI_DN      &kp C_BRI_UP      &kp INSERT          &kp K_PASTE  &kp F7  &kp F8  &kp F9  &kp F12  
+  &none  &trans  &kp K_MUTE    &kp K_VOL_DN      &kp C_VOL_UP  &kp SCROLLLOCK            &kp K_CUT  &kp F1  &kp F2  &kp F3  &kp F10   &none
+  &none  &trans  &kp C_PREV      &kp C_NEXT  &kp K_PLAY_PAUSE  &kp KP_NUMLOCK           &kp K_COPY  &kp F4  &kp F5  &kp F6  &kp F11   &none
+  &none  &trans      &trans    &kp C_BRI_DN      &kp C_BRI_UP      &kp INSERT          &kp K_PASTE  &kp F7  &kp F8  &kp F9  &kp F12   &none
                              &sk LEFT_SHIFT  &sk LEFT_CONTROL    &sk LEFT_ALT               &trans  &trans  &trans
             >;
         };
 
         Nav {
             bindings = <
-  &trans  &trans  &trans  &trans          &trans          &trans  &kp PAGE_UP  &kp PAGE_DOWN     &trans  &trans
-  &trans  &trans  &trans  &trans          &trans          &trans     &kp LEFT       &kp DOWN  &kp RIGHT  &kp UP 
-  &trans  &trans  &trans  &trans          &trans          &trans      &kp END       &kp HOME     &trans  &trans  
+  &none  &trans  &trans  &trans  &trans          &trans          &trans  &kp PAGE_UP  &kp PAGE_DOWN     &trans  &trans   &none
+  &none  &trans  &trans  &trans  &trans          &trans          &trans     &kp LEFT       &kp DOWN  &kp RIGHT  &kp UP   &none
+  &none  &trans  &trans  &trans  &trans          &trans          &trans      &kp END       &kp HOME     &trans  &trans   &none
                          &trans  &trans  &kp LEFT_SHIFT          &trans       &trans         &trans
             >;
         };
 
         Layer__5 {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans 
-  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
                          &trans  &trans  &trans          &trans  &trans  &trans
             >;
         };
