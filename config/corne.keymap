@@ -35,6 +35,7 @@
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
+            wait-ms = <1>;
             bindings =
                 <&macro_press>,
                 <&kp RIGHT_CONTROL>,
@@ -47,6 +48,7 @@
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
+            wait-ms = <1>;
             bindings = <&sk LEFT_SHIFT &kp ENTER>;
         };
     };
