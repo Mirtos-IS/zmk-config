@@ -9,7 +9,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    quick-tap-ms = <125>;
+    quick-tap-ms = <200>;
     retro-tap;
 };
 / {
@@ -249,7 +249,7 @@
   &none   &kp SLASH  &kp QUESTION   &kp MINUS         &kp GREATER_THAN   &kp BACKSLASH                 &kp GRAVE        &kp PLUS             &Macros_u_acute            &Macros_a_caret            &Macros_o_caret   &none
   &none  &Macros_i_acute        &kp AT  &kp EQUAL        &kp DOLLAR     &kp PERCENT                 &kp AMPS         &kp STAR             &Macros_e_acute            &Macros_a_acute            &Macros_o_acute   &none
   &none         &kp PIPE     &kp TILDE      &Cedilha  &kp HASH        &kp EXCL              &Macros_a_grave  &kp CARET            &Macros_e_caret            &Macros_a_tilde            &Macros_o_tilde   &none
-                                         &kp LGUI            &trans  &sk RALT            &kp DEL  &kp SLASH         &kp UNDERSCORE
+                                         &kp LGUI            &kp ENTER  &sk RALT            &kp DEL  &kp SLASH         &kp UNDERSCORE
             >;
         };
 
