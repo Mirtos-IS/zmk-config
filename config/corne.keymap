@@ -62,11 +62,8 @@
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-    )
-        Macros_e_acute: Macros_e_acute {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
+        )
+        ZMK_MACRO(Macros_e_acute,
             wait-ms = <1>;
             tap-ms = <0>;
             bindings =
@@ -78,27 +75,8 @@
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-          };
-        Macros_o_acute: Macros_o_acute {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro_two";
-            #binding-cells = <0>;
-            wait-ms = <1>;
-            tap-ms = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp O>,
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp SINGLE_QUOTE>,
-                <&macro_release>,
-                <&kp RALT>;
-          };
-        Macros_i_acute: Macros_i_acute {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
+        )
+        ZMK_MACRO(Macros_i_acute,
             wait-ms = <1>;
             tap-ms = <0>;
             bindings =
@@ -110,12 +88,22 @@
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-          };
-        Macros_u_acute: Macros_u_acute {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
+        )
+        ZMK_MACRO(Macros_o_acute,
+            wait-ms = <1>;
+            tap-ms = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp SINGLE_QUOTE>,
+                <&macro_release>,
+                <&kp RALT>;
+        )
+        ZMK_MACRO(Macros_u_acute,
+            wait-ms = <1>;
             tap-ms = <0>;
             bindings =
                 <&macro_tap>,
@@ -126,7 +114,7 @@
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-          };
+    ),
     };
 
     keymap {
