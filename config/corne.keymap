@@ -55,6 +55,7 @@
             label = "new_macro";
             #binding-cells = <0>;
             wait-ms = <1>;
+            tap-ms = <0>;
             bindings =
                 <&macro_tap>,
                 <&kp A>,
@@ -70,6 +71,7 @@
             label = "new_macro";
             #binding-cells = <0>;
             wait-ms = <1>;
+            tap-ms = <0>;
             bindings =
                 <&macro_tap>,
                 <&kp E>,
@@ -85,6 +87,7 @@
             label = "new_macro_two";
             #binding-cells = <0>;
             wait-ms = <1>;
+            tap-ms = <0>;
             bindings =
                 <&macro_tap>,
                 <&kp O>,
@@ -100,6 +103,7 @@
             label = "new_macro";
             #binding-cells = <0>;
             wait-ms = <1>;
+            tap-ms = <0>;
             bindings =
                 <&macro_tap>,
                 <&kp I>,
@@ -115,6 +119,7 @@
             label = "new_macro";
             #binding-cells = <0>;
             wait-ms = <0>;
+            tap-ms = <0>;
             bindings =
                 <&macro_tap>,
                 <&kp U>,
