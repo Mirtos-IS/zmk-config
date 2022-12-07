@@ -82,7 +82,7 @@
           };
         Macros_o_acute: Macros_o_acute {
             compatible = "zmk,behavior-macro";
-            label = "new_macro 2";
+            label = "new_macro_two";
             #binding-cells = <1>;
             wait-ms = <1>;
             bindings =
