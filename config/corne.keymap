@@ -103,7 +103,7 @@
                 <&kp RALT>;
         )
         ZMK_MACRO(Macros_u_acute,
-            wait-ms = <1>;
+            wait-ms = <0>;
             tap-ms = <0>;
             bindings =
                 <&macro_tap>,
@@ -112,6 +112,71 @@
                 <&kp RALT>,
                 <&macro_tap>,
                 <&kp SINGLE_QUOTE>,
+                <&macro_release>,
+                <&kp RALT>;
+        )
+        ZMK_MACRO(Macros_a_grave,
+            wait-ms = <1>;
+            tap-ms = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp GRAVE>,
+                <&macro_release>,
+                <&kp RALT>;
+        )
+        ZMK_MACRO(Macros_a_caret,
+            wait-ms = <1>;
+            tap-ms = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp CARET>,
+                <&macro_release>,
+                <&kp RALT>;
+        )
+        ZMK_MACRO(Macros_e_caret,
+            wait-ms = <1>;
+            tap-ms = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp CARET>,
+                <&macro_release>,
+                <&kp RALT>;
+        )
+        ZMK_MACRO(Macros_o_caret,
+            wait-ms = <1>;
+            tap-ms = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp CARET>,
+                <&macro_release>,
+                <&kp RALT>;
+        )
+        ZMK_MACRO(Cedilha,
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp COMMA>,
                 <&macro_release>,
                 <&kp RALT>;
         )
