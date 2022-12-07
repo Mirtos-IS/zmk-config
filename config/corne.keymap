@@ -50,10 +50,7 @@
             wait-ms = <0>;
             bindings = <&sk LEFT_SHIFT &kp ENTER>;
         };
-        Macros_a_acute: Macros_a_acute {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
+        ZMK_MACRO(Macros_a_acute,
             wait-ms = <1>;
             tap-ms = <0>;
             bindings =
@@ -65,7 +62,7 @@
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-          };
+    )
         Macros_e_acute: Macros_e_acute {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
