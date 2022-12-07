@@ -54,7 +54,7 @@
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            wait-ms = <0>;
+            wait-ms = <1>;
             bindings =
                 <&macro_tap>,
                 <&kp A>,
@@ -69,7 +69,7 @@
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            wait-ms = <0>;
+            wait-ms = <1>;
             bindings =
                 <&macro_tap>,
                 <&kp E>,
@@ -82,9 +82,9 @@
           };
         Macros_o_acute: Macros_o_acute {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
+            label = "new_macro 2";
+            #binding-cells = <1>;
+            wait-ms = <1>;
             bindings =
                 <&macro_tap>,
                 <&kp O>,
@@ -99,7 +99,7 @@
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            wait-ms = <0>;
+            wait-ms = <1>;
             bindings =
                 <&macro_tap>,
                 <&kp I>,
