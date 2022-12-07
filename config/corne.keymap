@@ -10,7 +10,6 @@
 &mt {
     flavor = "tap-preferred";
     quick-tap-ms = <125>;
-    retro-tap;
 };
 
 / {
