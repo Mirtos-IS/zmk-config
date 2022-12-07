@@ -58,7 +58,7 @@
             wait-ms = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp a>,
+                <&kp A>,
                 <&macro_press>,
                 <&kp RALT>,
                 <&macro_release>,
@@ -73,7 +73,7 @@
             wait-ms = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp e>,
+                <&kp E>,
                 <&macro_press>,
                 <&kp RALT>,
                 <&macro_release>,
@@ -88,7 +88,7 @@
             wait-ms = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp o>,
+                <&kp O>,
                 <&macro_press>,
                 <&kp RALT>,
                 <&macro_release>,
@@ -103,7 +103,7 @@
             wait-ms = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp i>,
+                <&kp I>,
                 <&macro_press>,
                 <&kp RALT>,
                 <&macro_release>,
@@ -118,7 +118,7 @@
             wait-ms = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp u>,
+                <&kp U>,
                 <&macro_press>,
                 <&kp RALT>,
                 <&macro_release>,
