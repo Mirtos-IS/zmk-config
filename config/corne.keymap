@@ -167,6 +167,32 @@
                 <&macro_release>,
                 <&kp RALT>;
         )
+        ZMK_MACRO(Macros_a_tilde,
+            wait-ms = <1>;
+            tap-ms = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp TILDE>,
+                <&macro_release>,
+                <&kp RALT>;
+        )
+        ZMK_MACRO(Macros_o_tilde,
+            wait-ms = <1>;
+            tap-ms = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp TILDE>,
+                <&macro_release>,
+                <&kp RALT>;
+        )
         ZMK_MACRO(Cedilha,
             wait-ms = <0>;
             tap-ms = <0>;
@@ -208,9 +234,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &none   &kp UNDERSCORE  &kp QUESTION   &kp HASH         &kp MINUS   &kp BACKSLASH          &kp GRAVE   &kp PLUS  &Macros_u_acute            &kp A            &kp O   &none
-  &none  &Macros_i_acute        &kp AT  &kp EQUAL        &kp DOLLAR     &kp PERCENT           &kp AMPS   &kp STAR  &Macros_e_acute  &Macros_a_acute  &Macros_o_acute   &none
-  &none         &kp PIPE     &kp TILDE      &kp C  &kp GREATER_THAN        &kp EXCL              &kp A  &kp CARET            &kp E            &kp A            &kp O   &none
+  &none   &kp UNDERSCORE  &kp QUESTION   &kp HASH         &kp MINUS   &kp BACKSLASH                 &kp GRAVE        &kp PLUS             &Macros_u_acute            &Macros_a_caret            &Macros_o_caret   &none
+  &none  &Macros_i_acute        &kp AT  &kp EQUAL        &kp DOLLAR     &kp PERCENT                 &kp AMPS         &kp STAR             &Macros_e_acute            &Macros_a_acute            &Macros_o_acute   &none
+  &none         &kp PIPE     &kp TILDE      &Cedilha  &kp GREATER_THAN        &kp EXCL              &Macros_a_grave  &kp CARET            &Macros_e_caret            &Macros_a_tilde            &Macros_o_tilde   &none
                                          &kp LGUI            &trans  &sk LEFT_SHIFT            &kp DEL  &kp SLASH         &kp RALT
             >;
         };
