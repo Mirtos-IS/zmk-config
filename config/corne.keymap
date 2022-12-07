@@ -94,7 +94,7 @@
             tap-ms = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp I>,
+                <&kp O>,
                 <&macro_press>,
                 <&kp RALT>,
                 <&macro_tap>,
