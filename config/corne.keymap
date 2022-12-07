@@ -60,11 +60,11 @@
                 <&kp A>,
                 <&macro_press>,
                 <&kp RALT>,
-                <&macro_release>,
+                <&macro_tap>,
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-        };
+          };
         Macros_e_acute: Macros_e_acute {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
@@ -75,11 +75,11 @@
                 <&kp E>,
                 <&macro_press>,
                 <&kp RALT>,
-                <&macro_release>,
+                <&macro_tap>,
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-        };
+          };
         Macros_o_acute: Macros_o_acute {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
@@ -90,11 +90,11 @@
                 <&kp O>,
                 <&macro_press>,
                 <&kp RALT>,
-                <&macro_release>,
+                <&macro_tap>,
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-        };
+          };
         Macros_i_acute: Macros_i_acute {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
@@ -105,11 +105,11 @@
                 <&kp I>,
                 <&macro_press>,
                 <&kp RALT>,
-                <&macro_release>,
+                <&macro_tap>,
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-        };
+          };
         Macros_u_acute: Macros_u_acute {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
@@ -120,11 +120,11 @@
                 <&kp U>,
                 <&macro_press>,
                 <&kp RALT>,
-                <&macro_release>,
+                <&macro_tap>,
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-        };
+          };
     };
 
     keymap {
