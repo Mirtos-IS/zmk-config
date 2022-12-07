@@ -62,7 +62,7 @@
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-        )
+        ),
         ZMK_MACRO(Macros_e_acute,
             wait-ms = <1>;
             tap-ms = <0>;
@@ -75,7 +75,7 @@
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-        )
+        ),
         ZMK_MACRO(Macros_i_acute,
             wait-ms = <1>;
             tap-ms = <0>;
@@ -88,7 +88,7 @@
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-        )
+        ),
         ZMK_MACRO(Macros_o_acute,
             wait-ms = <1>;
             tap-ms = <0>;
@@ -101,7 +101,7 @@
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-        )
+        ),
         ZMK_MACRO(Macros_u_acute,
             wait-ms = <1>;
             tap-ms = <0>;
@@ -114,7 +114,7 @@
                 <&kp SINGLE_QUOTE>,
                 <&macro_release>,
                 <&kp RALT>;
-    ),
+        ),
     };
 
     keymap {
