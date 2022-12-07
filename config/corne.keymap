@@ -234,7 +234,7 @@
   &none           &kp Y        &kp C           &kp L       &kp M      &kp K                  &kp Z        &kp F          &kp U    &kp COMMA  &kp SINGLE_QUOTE   &none
   &none  &mt LEFT_GUI I  &mt LCTRL S           &kp R  &mt LALT T      &kp G                  &kp P   &mt RALT N          &kp E  &mt RCTRL A   &mt RIGHT_GUI O   &none
   &none           &kp Q        &kp V           &kp W       &kp D      &kp J                  &kp B        &kp H  &kp SEMICOLON      &kp DOT             &kp X   &none
-                                      &sk LEFT_SHIFT       &sl 1  &lt 2 ESC          &kp BACKSPACE  &lt 4 SPACE      &lt 3 TAB
+                                      &sk LEFT_SHIFT       &sl 1  &lt 2 ESC          &mt LEFT_CONTROL(LEFT_ALT(LEFT_GUI(LEFT_SHIFT))) BACKSPACE  &lt 4 SPACE      &lt 3 TAB
             >;
         };
 
