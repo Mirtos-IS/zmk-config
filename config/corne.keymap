@@ -264,7 +264,7 @@
   &none       &kp A       &kp K_REDO         &kp K_COPY            &kp K_PASTE         &kp K_CUT           &kp STAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp MINUS   &none
   &none  &kp K_UNDO   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS     &kp LESS_THAN          &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0   &none
   &none       &kp O  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN          &kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp PLUS   &none
-                                                 &trans                 &trans            &trans          &kp COMMA       &kp DOT   &kp PERCENT
+                                                &trans                 &trans            &trans          &kp BACKSPACE       &kp DOT   &kp COMMA
             >;
         };
 
