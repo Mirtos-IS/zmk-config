@@ -125,6 +125,7 @@
             <&kp A>;
         )
 
+        ZMK_MACRO(
         Macros_e_caret,
         wait-ms = <0>;
         tap-ms = <0>;
@@ -133,6 +134,7 @@
             <&kp E>;
         )
 
+        ZMK_MACRO(
         Macros_o_caret,
         wait-ms = <0>;
         tap-ms = <0>;
@@ -141,6 +143,7 @@
             <&kp O>;
         )
 
+        ZMK_MACRO(
         Macros_a_tilde,
         wait-ms = <0>;
         tap-ms = <0>;
@@ -149,6 +152,7 @@
             <&kp A>;
         )
 
+        ZMK_MACRO(
         Macros_o_tilde,
         wait-ms = <0>;
         tap-ms = <0>;
@@ -157,6 +161,7 @@
             <&kp O>;
         )
 
+        ZMK_MACRO(
         Cedilha,
         wait-ms = <0>;
         tap-ms = <0>;
