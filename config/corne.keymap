@@ -69,6 +69,15 @@
             bindings = <&sk LEFT_SHIFT &kp ENTER>;
         };
 
+        ZMK_MACRO(
+
+        Cedilha,
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings =
+            <&macro_tap>,
+            <&kp RALT(COMMA)>;
+        )
     };
 
     keymap {
