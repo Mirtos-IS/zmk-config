@@ -75,12 +75,12 @@
         wait-ms = <0>;
         tap-ms = <0>;
         bindings =
-            <&macro_press>
-            <&kp RALT>
-            <&macro_tap>
-            <&kp COMMA>;
-            <&macro_release>
-            <&kp RALT>
+            <&macro_press>,
+            <&kp RALT>,
+            <&macro_tap>,
+            <&kp COMMA>,
+            <&macro_release>,
+            <&kp RALT>;
         )
     };
 
