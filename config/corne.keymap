@@ -76,6 +76,7 @@
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
+            <&kp A>;
         )
         ZMK_MACRO(
 
@@ -84,6 +85,7 @@
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
+            <&kp RALT(E)>;
         )
         ZMK_MACRO(
 
@@ -92,26 +94,34 @@
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
+            <&kp RALT(I)>;
         )
         ZMK_MACRO(
 
         Macros_o_acute,
+        wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
+            <&kp RALT(O)>;
         )
         ZMK_MACRO(
 
         Macros_u_acute,
+        wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
+            <&kp RALT(U)>;
         )
         ZMK_MACRO(
 
         Macros_a_grave,
+        wait-ms = <0>;
         tap-ms = <0>;
         bindings =
+            <&macro_tap>,
+            <&kp RALT(GRAVE)>,
             <&macro_tap>,
             <&kp A>;
         )
@@ -122,51 +132,62 @@
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
+            <&kp RALT(NUMBER_6)>,
+            <&macro_tap>,
             <&kp A>;
         )
-
         ZMK_MACRO(
+
         Macros_e_caret,
         wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
+            <&kp RALT(NUMBER_6)>,
+            <&macro_tap>,
             <&kp E>;
         )
-
         ZMK_MACRO(
+
         Macros_o_caret,
         wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
+            <&kp RALT(NUMBER_6)>,
+            <&macro_tap>,
             <&kp O>;
         )
-
         ZMK_MACRO(
+
         Macros_a_tilde,
         wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
+            <&kp RALT(TILDE)>,
+            <&macro_tap>,
             <&kp A>;
         )
-
         ZMK_MACRO(
+
         Macros_o_tilde,
         wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
+            <&kp RALT(TILDE)>,
+            <&macro_tap>,
             <&kp O>;
         )
-
         ZMK_MACRO(
+
         Cedilha,
         wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
+            <&kp RALT(COMMA)>;
         )
     };
 
