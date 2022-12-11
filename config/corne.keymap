@@ -72,66 +72,38 @@
         ZMK_MACRO(
 
         Macros_a_acute,
-        wait-ms = <1>;
+        wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp A>,
-            <&macro_press>,
-            <&kp RALT>,
-            <&macro_tap>,
-            <&kp SINGLE_QUOTE>,
-            <&macro_release>,
-            <&kp RALT>;
-
+            <&kp RALT(A)>,
         )
         ZMK_MACRO(
 
         Macros_e_acute,
-        wait-ms = <1>;
+        wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp E>,
-            <&macro_press>,
-            <&kp RALT>,
-            <&macro_tap>,
-            <&kp SINGLE_QUOTE>,
-            <&macro_release>,
-            <&kp RALT>;
-
+            <&kp RALT(E)>,
         )
         ZMK_MACRO(
 
         Macros_i_acute,
-        wait-ms = <1>;
+        wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp I>,
-            <&macro_press>,
-            <&kp RALT>,
-            <&macro_tap>,
-            <&kp SINGLE_QUOTE>,
-            <&macro_release>,
-            <&kp RALT>;
-
+            <&kp RALT(I)>,
         )
         ZMK_MACRO(
 
         Macros_o_acute,
-        wait-ms = <1>;
+        wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp O>,
-            <&macro_press>,
-            <&kp RALT>,
-            <&macro_tap>,
-            <&kp SINGLE_QUOTE>,
-            <&macro_release>,
-            <&kp RALT>;
-
+            <&kp RALT(O)>,
         )
         ZMK_MACRO(
 
@@ -140,110 +112,73 @@
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp U>,
-            <&macro_press>,
-            <&kp RALT>,
-            <&macro_tap>,
-            <&kp SINGLE_QUOTE>,
-            <&macro_release>,
-            <&kp RALT>;
-
+            <&kp RALT(U)>,
         )
         ZMK_MACRO(
 
         Macros_a_grave,
-        wait-ms = <1>;
+        wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp A>,
-            <&macro_press>,
-            <&kp RALT>,
+            <&kp RALT(GRAVE)>,
             <&macro_tap>,
-            <&kp GRAVE>,
-            <&macro_release>,
-            <&kp RALT>;
-
+            <&kp A>,
         )
         ZMK_MACRO(
 
         Macros_a_caret,
-        wait-ms = <1>;
+        wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp A>,
-            <&macro_press>,
-            <&kp RALT>,
+            <&kp RALT(NUMBER_6)>,
             <&macro_tap>,
-            <&kp CARET>,
-            <&macro_release>,
-            <&kp RALT>;
-
+            <&kp A>,
         )
         ZMK_MACRO(
 
         Macros_e_caret,
-        wait-ms = <1>;
+        wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp E>,
-            <&macro_press>,
-            <&kp RALT>,
+            <&kp RALT(NUMBER_6)>,
             <&macro_tap>,
-            <&kp CARET>,
-            <&macro_release>,
-            <&kp RALT>;
-
+            <&kp E>,
         )
         ZMK_MACRO(
 
         Macros_o_caret,
-        wait-ms = <1>;
+        wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp O>,
-            <&macro_press>,
-            <&kp RALT>,
+            <&kp RALT(NUMBER_6)>,
             <&macro_tap>,
-            <&kp CARET>,
-            <&macro_release>,
-            <&kp RALT>;
-
+            <&kp O>,
         )
         ZMK_MACRO(
 
         Macros_a_tilde,
-        wait-ms = <1>;
+        wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp A>,
-            <&macro_press>,
-            <&kp RALT>,
+            <&kp RALT(TILDE)>,
             <&macro_tap>,
-            <&kp TILDE>,
-            <&macro_release>,
-            <&kp RALT>;
-
+            <&kp A>,
         )
         ZMK_MACRO(
 
         Macros_o_tilde,
-        wait-ms = <1>;
+        wait-ms = <0>;
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp O>,
-            <&macro_press>,
-            <&kp RALT>,
+            <&kp RALT(TILDE)>,
             <&macro_tap>,
-            <&kp TILDE>,
-            <&macro_release>,
-            <&kp RALT>;
-
+            <&kp O>,
         )
         ZMK_MACRO(
 
@@ -252,14 +187,7 @@
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp C>,
-            <&macro_press>,
-            <&kp RALT>,
-            <&macro_tap>,
-            <&kp COMMA>,
-            <&macro_release>,
-            <&kp RALT>;
-
+            <&kp RALT(COMMA)>,
         )
     };
 
@@ -275,7 +203,7 @@
 
             bindings = <
   &none           &kp Y        &kp C           &kp L       &kp M      &kp K                                   &kp Z        &kp F          &kp U    &kp COMMA  &kp SINGLE_QUOTE   &none
-  &none  &mt LEFT_GUI I  &mt LCTRL S           &kp R  &mt LALT T      &kp G                                   &kp P   &mt LALT N          &kp E  &mt RCTRL A   &mt RIGHT_GUI O   &none
+  &none  &mt LEFT_GUI I  &mt LCTRL S &mt LEFT_SHIFT(R)  &mt LALT T      &kp G                                   &kp P   &mt LALT N &mt RIGHT_SHIFT(E)  &mt RCTRL A   &mt RIGHT_GUI O   &none
   &none           &kp Q        &kp V           &kp W       &kp D      &kp J                                   &kp B        &kp H  &kp SEMICOLON      &kp DOT             &kp X   &none
                                       &sk LEFT_SHIFT       &sl 1  &lt 2 ESC          &mt LS(LC(LA(LGUI))) BACKSPACE  &lt 4 SPACE      &lt 3 TAB
             >;
@@ -304,9 +232,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &none       &kp A       &kp K_REDO         &kp K_COPY            &kp K_PASTE         &kp K_CUT               &kp STAR  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9     &kp MINUS   &none
+  &none       &kp A       &kp K_REDO         &kp K_COPY            &kp K_PASTE         &kp K_CUT               &kp STAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp MINUS   &none
   &none  &kp K_UNDO   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS     &kp LESS_THAN              &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0   &none
-  &none       &kp O  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN              &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp PLUS   &none
+  &none       &kp O  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN              &kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9     &kp PLUS   &none
                                                  &trans                 &trans            &trans          &kp BACKSPACE       &kp DOT     &kp COMMA
             >;
         };
