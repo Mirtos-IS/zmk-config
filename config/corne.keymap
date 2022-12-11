@@ -76,7 +76,7 @@
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp A>;
+            <&kp RALT(A)>;
         )
         ZMK_MACRO(
 
