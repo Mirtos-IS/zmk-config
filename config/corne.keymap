@@ -117,6 +117,7 @@
         )
         ZMK_MACRO(
 
+        Macros_a_caret,
         wait-ms = <0>;
         tap-ms = <0>;
         bindings =
