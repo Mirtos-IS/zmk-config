@@ -76,7 +76,7 @@
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp RALT(A)>,
+            <&kp RALT(A)>;
         )
         ZMK_MACRO(
 
@@ -85,7 +85,7 @@
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp RALT(E)>,
+            <&kp RALT(E)>;
         )
         ZMK_MACRO(
 
@@ -94,7 +94,7 @@
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp RALT(I)>,
+            <&kp RALT(I)>;
         )
         ZMK_MACRO(
 
@@ -103,7 +103,7 @@
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp RALT(O)>,
+            <&kp RALT(O)>;
         )
         ZMK_MACRO(
 
@@ -112,7 +112,7 @@
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp RALT(U)>,
+            <&kp RALT(U)>;
         )
         ZMK_MACRO(
 
@@ -123,7 +123,7 @@
             <&macro_tap>,
             <&kp RALT(GRAVE)>,
             <&macro_tap>,
-            <&kp A>,
+            <&kp A>;
         )
         ZMK_MACRO(
 
@@ -134,7 +134,7 @@
             <&macro_tap>,
             <&kp RALT(NUMBER_6)>,
             <&macro_tap>,
-            <&kp A>,
+            <&kp A>;
         )
         ZMK_MACRO(
 
@@ -145,7 +145,7 @@
             <&macro_tap>,
             <&kp RALT(NUMBER_6)>,
             <&macro_tap>,
-            <&kp E>,
+            <&kp E>;
         )
         ZMK_MACRO(
 
@@ -156,7 +156,7 @@
             <&macro_tap>,
             <&kp RALT(NUMBER_6)>,
             <&macro_tap>,
-            <&kp O>,
+            <&kp O>;
         )
         ZMK_MACRO(
 
@@ -167,7 +167,7 @@
             <&macro_tap>,
             <&kp RALT(TILDE)>,
             <&macro_tap>,
-            <&kp A>,
+            <&kp A>;
         )
         ZMK_MACRO(
 
@@ -178,7 +178,7 @@
             <&macro_tap>,
             <&kp RALT(TILDE)>,
             <&macro_tap>,
-            <&kp O>,
+            <&kp O>;
         )
         ZMK_MACRO(
 
@@ -187,7 +187,7 @@
         tap-ms = <0>;
         bindings =
             <&macro_tap>,
-            <&kp RALT(COMMA)>,
+            <&kp RALT(COMMA)>;
         )
     };
 
