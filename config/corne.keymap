@@ -145,9 +145,9 @@
             <&macro_tap>,
             <&kp GRAVE>,
             <&macro_release>,
-            <&kp RALT>;
+            <&kp RALT>,
             <&macro_tap>,
-            <&kp A>,
+            <&kp A>;
         )
         ZMK_MACRO(
 
@@ -160,9 +160,9 @@
             <&macro_tap>,
             <&kp NUMBER_6>,
             <&macro_release>,
-            <&kp RALT>;
+            <&kp RALT>,
             <&macro_tap>,
-            <&kp A>,
+            <&kp A>;
         )
         ZMK_MACRO(
 
@@ -175,9 +175,9 @@
             <&macro_tap>,
             <&kp NUMBER_6>,
             <&macro_release>,
-            <&kp RALT>;
+            <&kp RALT>,
             <&macro_tap>,
-            <&kp E>,
+            <&kp E>;
         )
         ZMK_MACRO(
 
@@ -190,9 +190,9 @@
             <&macro_tap>,
             <&kp NUMBER_6>,
             <&macro_release>,
-            <&kp RALT>;
+            <&kp RALT>,
             <&macro_tap>,
-            <&kp O>,
+            <&kp O>;
         )
         ZMK_MACRO(
 
@@ -205,9 +205,9 @@
             <&macro_tap>,
             <&kp TILDE>,
             <&macro_release>,
-            <&kp RALT>;
+            <&kp RALT>,
             <&macro_tap>,
-            <&kp A>,
+            <&kp A>;
         )
         ZMK_MACRO(
 
@@ -220,9 +220,9 @@
             <&macro_tap>,
             <&kp TILDE>,
             <&macro_release>,
-            <&kp RALT>;
+            <&kp RALT>,
             <&macro_tap>,
-            <&kp O>,
+            <&kp O>;
         )
         ZMK_MACRO(
 
