@@ -303,16 +303,16 @@
   &none  &trans  &kp K_MUTE    &kp K_VOL_DN      &kp C_VOL_UP  &kp SCROLLLOCK            &kp K_CUT  &kp F1  &kp F2  &kp F3  &kp F10   &none
   &none  &trans  &kp C_PREV      &kp C_NEXT  &kp K_PLAY_PAUSE  &kp KP_NUMLOCK           &kp K_COPY  &kp F4  &kp F5  &kp F6  &kp F11   &none
   &none  &trans      &trans    &kp C_BRI_DN      &kp C_BRI_UP      &kp INSERT          &kp K_PASTE  &kp F7  &kp F8  &kp F9  &kp F12   &none
-                             &sk LEFT_SHIFT  &sk LEFT_CONTROL    &sk LEFT_ALT               &trans  &trans  &trans
+                             &sk LEFT_SHIFT  &sk LEFT_CONTROL    &sk LEFT_ALT               &reset  &trans  &trans
             >;
         };
 
         Nav {
             bindings = <
-  &none  &trans  &trans  &trans  &trans          &trans          &trans  &kp PAGE_UP  &kp PAGE_DOWN     &trans  &trans   &none
-  &none  &trans  &trans  &trans  &trans          &trans          &trans     &kp LEFT       &kp DOWN  &kp RIGHT  &kp UP   &none
-  &none  &trans   &none   &none   &none          &trans          &trans      &kp END       &kp HOME     &trans  &trans   &none
-                         &trans  &trans  &kp LEFT_SHIFT          &trans       &trans         &trans
+  &none  &trans  &trans       &trans  &trans          &trans          &trans  &kp PAGE_UP  &kp PAGE_DOWN     &trans  &trans   &none
+  &none  &trans  &trans       &trans  &trans          &trans          &trans     &kp LEFT       &kp DOWN  &kp RIGHT  &kp UP   &none
+  &none  &trans   &none        &none   &none          &trans          &trans      &kp END       &kp HOME     &trans  &trans   &none
+                         &kp K_SLEEP  &trans  &kp LEFT_SHIFT           &none       &trans         &trans
             >;
         };
     };
