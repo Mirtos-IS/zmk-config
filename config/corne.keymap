@@ -51,7 +51,6 @@
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            wait-ms = <0>;
             bindings =
                 <&macro_press>,
                 <&kp RIGHT_CONTROL>,
@@ -64,7 +63,6 @@
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            wait-ms = <0>;
             bindings = <&sk LEFT_SHIFT &kp ENTER>;
         };
 
@@ -276,9 +274,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &none        &kp SLASH  &kp QUESTION  &kp MINUS  &kp GREATER_THAN  &kp BACKSLASH                &kp GRAVE   &kp PLUS  &Macros_u_acute  &Macros_a_caret  &Macros_o_caret   &none
-  &none  &Macros_i_acute        &kp AT  &kp EQUAL        &kp DOLLAR    &kp PERCENT                 &kp AMPS   &kp STAR  &Macros_e_acute  &Macros_a_acute  &Macros_o_acute   &none
-  &none         &kp PIPE     &kp TILDE   &Cedilha          &kp HASH       &kp EXCL          &Macros_a_grave  &kp CARET  &Macros_e_caret  &Macros_a_tilde  &Macros_o_tilde   &none
+  &none    &kp BACKSLASH  &kp QUESTION  &kp MINUS  &kp GREATER_THAN  &kp BACKSLASH                &kp GRAVE   &kp EXCL  &Macros_u_acute  &Macros_a_caret  &Macros_o_caret   &none
+  &none  &Macros_i_acute        &kp AT  &kp EQUAL        &kp DOLLAR       &kp HASH                 &kp AMPS   &kp STAR  &Macros_e_acute  &Macros_a_acute  &Macros_o_acute   &none
+  &none         &kp PIPE     &kp TILDE   &Cedilha       &kp PERCENT       &kp PLUS          &Macros_a_grave  &kp CARET  &Macros_e_caret  &Macros_a_tilde  &Macros_o_tilde   &none
                                         &kp LCTRL          &kp LGUI       &sk RALT                  &kp DEL  &kp SLASH   &kp UNDERSCORE
             >;
         };
@@ -294,25 +292,25 @@
   &none       &kp A       &kp K_REDO         &kp K_COPY            &kp K_PASTE         &kp K_CUT               &kp STAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp MINUS   &none
   &none  &kp K_UNDO   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS     &kp LESS_THAN              &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0   &none
   &none       &kp O  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN              &kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp PLUS   &none
-                                                 &trans                 &trans            &trans          &kp BACKSPACE       &kp DOT     &kp COMMA
+                                                  &none                  &none             &none          &kp BACKSPACE       &kp DOT     &kp COMMA
             >;
         };
 
         System {
             bindings = <
-  &none  &trans  &kp K_MUTE    &kp K_VOL_DN      &kp C_VOL_UP  &kp SCROLLLOCK            &kp K_CUT  &kp F1  &kp F2  &kp F3  &kp F10   &none
-  &none  &trans  &kp C_PREV      &kp C_NEXT  &kp K_PLAY_PAUSE  &kp KP_NUMLOCK           &kp K_COPY  &kp F4  &kp F5  &kp F6  &kp F11   &none
-  &none  &trans      &trans    &kp C_BRI_DN      &kp C_BRI_UP      &kp INSERT          &kp K_PASTE  &kp F7  &kp F8  &kp F9  &kp F12   &none
-                             &sk LEFT_SHIFT  &sk LEFT_CONTROL    &sk LEFT_ALT               &reset  &trans  &trans
+  &none   &none  &kp K_MUTE    &kp K_VOL_DN      &kp C_VOL_UP  &kp SCROLLLOCK            &kp K_CUT  &kp F1  &kp F2  &kp F3  &kp F10   &none
+  &none   &none  &kp C_PREV      &kp C_NEXT  &kp K_PLAY_PAUSE  &kp KP_NUMLOCK           &kp K_COPY  &kp F4  &kp F5  &kp F6  &kp F11   &none
+  &none   &none       &none    &kp C_BRI_DN      &kp C_BRI_UP      &kp INSERT          &kp K_PASTE  &kp F7  &kp F8  &kp F9  &kp F12   &none
+                             &sk LEFT_SHIFT  &sk LEFT_CONTROL    &sk LEFT_ALT               &reset   &none   &none
             >;
         };
 
         Nav {
             bindings = <
-  &none  &trans  &trans       &trans  &trans          &trans          &trans  &kp PAGE_UP  &kp PAGE_DOWN     &trans  &trans   &none
-  &none  &trans  &trans       &trans  &trans          &trans          &trans     &kp LEFT       &kp DOWN  &kp RIGHT  &kp UP   &none
-  &none  &trans   &none        &none   &none          &trans          &trans      &kp END       &kp HOME     &trans  &trans   &none
-                         &kp K_SLEEP  &trans  &kp LEFT_SHIFT           &none       &trans         &trans
+  &none   &none   &none        &none             &none           &none           &none  &kp PAGE_UP  &kp PAGE_DOWN      &none   &none   &none
+  &none   &none   &none        &none  &kp C_PLAY_PAUSE           &none           &none     &kp LEFT       &kp DOWN  &kp RIGHT  &kp UP   &none
+  &none   &none   &none        &none             &none           &none           &none      &kp END       &kp HOME      &none   &none   &none
+                         &kp K_SLEEP             &none  &kp LEFT_SHIFT           &none        &none          &none
             >;
         };
     };
