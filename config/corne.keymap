@@ -44,6 +44,11 @@
             bindings = <&kp ENTER>;
             key-positions = <8 9>;
         };
+
+        shift_enter {
+            bindings = <&Shift_enter>;
+            key-positions = <33 32>;
+        };
     };
 
     macros {
@@ -274,10 +279,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &none    &kp BACKSLASH  &kp QUESTION  &kp MINUS  &kp GREATER_THAN  &kp BACKSLASH                &kp GRAVE   &kp EXCL  &Macros_u_acute  &Macros_a_caret  &Macros_o_caret   &none
-  &none  &Macros_i_acute        &kp AT  &kp EQUAL        &kp DOLLAR       &kp HASH                 &kp AMPS   &kp STAR  &Macros_e_acute  &Macros_a_acute  &Macros_o_acute   &none
-  &none         &kp PIPE     &kp TILDE   &Cedilha       &kp PERCENT       &kp PLUS          &Macros_a_grave  &kp CARET  &Macros_e_caret  &Macros_a_tilde  &Macros_o_tilde   &none
-                                        &kp LCTRL          &kp LGUI       &sk RALT                  &kp DEL  &kp SLASH   &kp UNDERSCORE
+  &none    &kp BACKSLASH   &kp QUESTION  &kp MINUS  &kp GREATER_THAN  &kp TILDE                &kp GRAVE        &kp CARET  &Macros_u_acute  &Macros_a_caret  &Macros_o_caret   &none
+  &none  &Macros_i_acute         &kp AT  &kp EQUAL        &kp DOLLAR   &kp HASH                 &kp AMPS         &kp STAR  &Macros_e_acute  &Macros_a_acute  &Macros_o_acute   &none
+  &none         &kp PIPE  &kp BACKSLASH   &Cedilha       &kp PERCENT   &kp PLUS          &Macros_a_grave  &kp EXCLAMATION  &Macros_e_caret  &Macros_a_tilde  &Macros_o_tilde   &none
+                                         &kp LCTRL          &kp LGUI   &sk RALT                  &kp DEL        &kp SLASH   &kp UNDERSCORE
             >;
         };
 
