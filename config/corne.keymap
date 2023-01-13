@@ -13,6 +13,10 @@
     retro-tap;
 };
 
+&sk {
+    quick-release;
+};
+
 / {
     behaviors {
         gqt: global-quick-tap {
@@ -27,10 +31,6 @@
                 <&kp>,
                 <&kp>;
         };
-    };
-
-    &sk {
-        quick-release;
     };
 
     combos {
