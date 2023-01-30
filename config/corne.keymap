@@ -303,10 +303,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &none       &kp A       &kp K_REDO         &kp K_COPY            &kp K_PASTE         &kp K_CUT               &kp STAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp MINUS   &none
-  &none  &kp K_UNDO   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS     &kp LESS_THAN              &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0   &none
-  &none       &kp O  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN              &kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp PLUS   &none
-                                                  &none                  &none             &none          &kp BACKSPACE       &kp DOT     &kp COMMA
+  &none             &kp A       &kp K_REDO         &kp K_COPY            &kp K_PASTE   &kp K_CUT               &kp STAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp MINUS   &none
+  &none     &kp LESS_THAN   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS  &kp K_UNDO              &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0   &none
+  &none  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS       &kp O              &kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp PLUS   &none
+                                                        &none                  &none       &none          &kp BACKSPACE       &kp DOT     &kp COMMA
             >;
         };
 
@@ -321,10 +321,10 @@
 
         Nav {
             bindings = <
-  &none   &none      &none           &none   &none   &none           &none  &kp PAGE_UP  &kp PAGE_DOWN      &none   &none   &none
-  &none   &none  &kp LCTRL  &kp LEFT_SHIFT   &none   &none           &none     &kp LEFT       &kp DOWN  &kp RIGHT  &kp UP   &none
-  &none   &none      &none           &none   &none   &none           &none      &kp END       &kp HOME   &kp C_PP   &none   &none
-                                     &none   &sl 5   &none           &none        &none          &none
+  &none         &none      &none      &kp K_COPY   &kp K_PASTE   &none           &none  &kp PAGE_UP  &kp PAGE_DOWN      &none   &none   &none
+  &none  &kp LEFT_GUI  &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT   &none           &none     &kp LEFT       &kp DOWN  &kp RIGHT  &kp UP   &none
+  &none         &none      &none           &none         &none   &none           &none      &kp END       &kp HOME   &kp C_PP   &none   &none
+                                           &none         &sl 5   &none           &none        &none          &none
             >;
         };
 
