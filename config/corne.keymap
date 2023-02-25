@@ -273,7 +273,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none           &kp Y        &kp C             &kp L       &kp M      &kp K                             &kp Z        &kp F              &kp U    &kp COMMA  &kp SINGLE_QUOTE  &none
+&none           &kp Y        &kp C             &kp L       &kp M      &kp K                             &kp Z        &kp F              &kp U    &kp COMMA  &lt 5 APOSTROPHE  &none
 &none  &mt LEFT_GUI I  &mt LCTRL S  &mt LEFT_SHIFT R  &mt LALT T      &kp G                             &kp P   &mt LALT N  &mt RIGHT_SHIFT E  &mt RCTRL A   &mt RIGHT_GUI O  &none
 &none           &kp Q        &kp V             &kp W       &kp D      &kp J                             &kp B        &kp H      &kp SEMICOLON      &kp DOT             &kp X  &none
                                       &sk LEFT_SHIFT       &sl 1  &lt 2 ESC    &mt LS(LC(LA(LGUI))) BACKSPACE  &lt 4 SPACE          &lt 3 TAB
@@ -291,7 +291,7 @@
 &none    &kp BACKSLASH   &kp QUESTION  &kp MINUS  &kp GREATER_THAN  &kp TILDE          &kp GRAVE        &kp CARET  &Macros_u_acute  &Macros_a_caret  &Macros_o_caret  &none
 &none  &Macros_i_acute         &kp AT  &kp EQUAL        &kp DOLLAR   &kp HASH           &kp AMPS         &kp STAR  &Macros_e_acute  &Macros_a_acute  &Macros_o_acute  &none
 &none         &kp PIPE  &kp BACKSLASH   &Cedilha       &kp PERCENT   &kp PLUS    &Macros_a_grave  &kp EXCLAMATION  &Macros_e_caret  &Macros_a_tilde  &Macros_o_tilde  &none
-                                       &kp LCTRL          &kp LGUI   &sk RALT            &kp DEL        &kp SLASH   &kp UNDERSCORE
+                                       &kp LCTRL          &kp LGUI   &sk RALT          &kp COLON        &kp SLASH   &kp UNDERSCORE
             >;
         };
 
@@ -303,9 +303,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none             &kp A       &kp K_REDO         &kp K_COPY            &kp K_PASTE   &kp K_CUT         &kp STAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &none
-&none     &kp LESS_THAN   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS  &kp K_UNDO        &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp DOT  &none
-&none  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS       &kp O        &kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp PLUS  &none
+&none             &mo 5       &kp K_REDO         &kp K_COPY            &kp K_PASTE   &kp K_CUT         &kp STAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &none
+&none     &kp LESS_THAN   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS  &kp DELETE        &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp DOT  &none
+&none  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS     &kp F13        &kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp PLUS  &none
                                                       &none                  &none       &none    &kp BACKSPACE        &kp N0     &kp COMMA
             >;
         };
@@ -330,10 +330,10 @@
 
         BLE {
             bindings = <
-&none       &none         &none         &none         &none  &none    &none  &none  &none  &none  &none  &none
-&none       &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none    &none  &none  &none  &none  &none  &none
-&none  &bt BT_CLR         &none         &none         &none  &none    &none  &none  &none  &none  &none  &none
-                                        &none         &none  &none    &none  &none  &none
+&none       &none         &none         &none         &none       &reset         &reset  &none  &none  &none  &none  &none
+&none       &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &reset          &none  &none  &none  &none  &none  &none
+&none  &bt BT_CLR         &none         &none         &none  &bootloader    &bootloader  &none  &none  &none  &none  &none
+                                        &none         &none        &none          &none  &none  &none
             >;
         };
     };
