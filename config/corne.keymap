@@ -315,7 +315,7 @@
 &none  &none  &kp K_MUTE    &kp K_VOL_DN      &kp C_VOL_UP  &kp SCROLLLOCK    &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3  &kp F10  &none
 &none  &none  &kp K_PREV      &kp K_NEXT  &kp K_PLAY_PAUSE  &kp KP_NUMLOCK    &kp PRINTSCREEN  &kp F4  &kp F5  &kp F6  &kp F11  &none
 &none  &none       &none    &kp C_BRI_DN      &kp C_BRI_UP      &kp INSERT        &kp K_PASTE  &kp F7  &kp F8  &kp F9  &kp F12  &none
-                          &sk LEFT_SHIFT  &sk LEFT_CONTROL    &sk LEFT_ALT             &reset   &none   &none
+                          &sk LEFT_SHIFT  &sk LEFT_CONTROL    &sk LEFT_ALT             &sys_reset   &none   &none
             >;
         };
 
@@ -330,8 +330,8 @@
 
         BLE {
             bindings = <
-&none       &none         &none         &none         &none       &reset         &reset  &none  &none  &none  &none  &none
-&none       &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &reset          &none  &none  &none  &none  &none  &none
+&none       &none         &none         &none         &none       &sys_reset         &sys_reset  &none  &none  &none  &none  &none
+&none       &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &sys_reset          &none  &none  &none  &none  &none  &none
 &none  &bt BT_CLR         &none         &none         &none  &bootloader    &bootloader  &none  &none  &none  &none  &none
                                         &none         &none        &none          &none  &none  &none
             >;
