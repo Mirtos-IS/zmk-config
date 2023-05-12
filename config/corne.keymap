@@ -318,10 +318,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none             &mo 5       &kp K_REDO         &kp K_COPY            &kp K_PASTE   &kp K_CUT         &kp STAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &none
-&none     &kp LESS_THAN   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS  &kp DELETE        &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp DOT  &none
-&none  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS     &kp F13        &kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp PLUS  &none
-                                                      &none                  &none       &none    &kp BACKSPACE        &kp N0     &kp COMMA
+&none          &mo 5      &kp K_REDO        &kp K_COPY           &kp K_PASTE   &kp K_CUT         &kp STAR               &kp PLUS          &kp MINUS         &kp STAR         &kp SLASH  &none
+&none         &kp N1          &kp N2            &kp N3                &kp N4      &kp N5     &kp NUMBER_6                 &kp N7             &kp N8           &kp N9            &kp N0  &none
+&none  &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp DELETE        &kp SLASH  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &none
+                                                 &none                 &none       &none    &kp BACKSPACE                &kp DOT          &kp COMMA
             >;
         };
 
