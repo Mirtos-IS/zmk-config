@@ -30,6 +30,17 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+
+        qlt: qlt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "QLT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            flavor = "balanced";
+            retro-tap;
+        };
     };
 
     combos {
@@ -262,10 +273,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Y           &kp C  &kp L           &kp M  &kp K    &kp Z               &kp F        &kp U          &lt 4 COMMA  &kp APOSTROPHE  &none
-&none  &kp I           &kp S  &kp R           &kp T  &kp G    &kp P               &kp N        &kp E          &kp A        &kp O           &none
-&none  &mt LEFT_ALT Q  &kp V  &kp W           &kp D  &kp J    &kp B               &kp H        &kp SEMICOLON  &kp DOT      &mt LEFT_ALT X  &none
-                              &sk LEFT_SHIFT  &sl 1  &sl 2    &mt LGUI BACKSPACE  &lt 3 SPACE  &sk LCTRL
+&none  &kp Y           &kp C  &kp L           &kp M  &kp K         &kp Z               &kp F        &kp U          &lt 4 COMMA  &kp APOSTROPHE  &none
+&none  &kp I           &kp S  &kp R           &kp T  &kp G         &kp P               &kp N        &kp E          &kp A        &kp O           &none
+&none  &mt LEFT_ALT Q  &kp V  &kp W           &kp D  &kp J         &kp B               &kp H        &kp SEMICOLON  &kp DOT      &mt LEFT_ALT X  &none
+                              &sk LEFT_SHIFT  &sl 1  &qlt 2 ESC    &mt LGUI BACKSPACE  &lt 3 SPACE  &sk LCTRL
             >;
         };
 
@@ -277,10 +288,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp DOUBLE_QUOTES  &kp QUESTION   &kp MINUS  &kp GREATER_THAN  &kp TILDE    &kp GRAVE        &kp CARET        &Macros_u_acute  &Macros_a_caret  &Macros_o_caret  &none
-&none  &Macros_i_acute    &kp AT         &kp EQUAL  &kp DLLR          &kp HASH     &kp AMPS         &kp STAR         &Macros_e_acute  &Macros_a_acute  &Macros_o_acute  &none
-&none  &kp PIPE           &kp BACKSLASH  &Cedilha   &kp PERCENT       &kp PLUS     &Macros_a_grave  &kp EXCLAMATION  &Macros_e_caret  &Macros_a_tilde  &Macros_o_tilde  &none
-                                         &kp LCTRL  &kp LGUI          &sk RALT     &kp ESC          &kp SLASH        &kp UNDERSCORE
+&none  &kp DOUBLE_QUOTES  &kp QUESTION   &kp MINUS     &kp GREATER_THAN  &kp TILDE    &kp GRAVE        &kp CARET        &Macros_u_acute  &Macros_a_caret  &Macros_o_caret  &none
+&none  &Macros_i_acute    &kp AT         &kp EQUAL     &kp DLLR          &kp HASH     &kp AMPS         &kp STAR         &Macros_e_acute  &Macros_a_acute  &Macros_o_acute  &none
+&none  &kp PIPE           &kp BACKSLASH  &Cedilha      &kp PERCENT       &kp PLUS     &Macros_a_grave  &kp EXCLAMATION  &Macros_e_caret  &Macros_a_tilde  &Macros_o_tilde  &none
+                                         &kp LEFT_ALT  &kp LGUI          &sk RALT     &kp COLON        &kp SLASH        &kp UNDERSCORE
             >;
         };
 
